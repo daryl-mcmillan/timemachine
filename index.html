@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>time machine</title>
+  </head>
+  
+  <body>
+    <h1>time machine</h1>
+    <form onsubmit="return false;">
+      <div>
+      <label for="rawdata">data:</label><br/>
+      <textarea rows="10" cols="80" id="rawdata"></textarea>
+      </div>
+      <div>
+        <label for="pattern">pattern:</label><br/>
+        <input type="text" id="pattern" value=""/>
+      </div>
+      <div>
+        <button onclick="render_data();">render</button>
+      </div>
+    </form>
+    <pre id="parsed"></pre>
+    <script src="script/time.js"></script>
+  </body>
+</html>
